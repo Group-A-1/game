@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div id="game">
+            <div id="userChoice">
+                <h2>Your Choice</h2>
+                <button class="choice-btn" onclick="makeChoice('rock')">Rock</button>
+                <button class="choice-btn" onclick="makeChoice('paper')">Paper</button>
+                <button class="choice-btn" onclick="makeChoice('scissors')">Scissors</button>
+            </div>
+            <div id="result">
+                <h2>Result</h2>
+                <p id="roundResult">Make your choice to start playing!</p>
+                <button id="resetBtn" onclick="resetGame()">Play Again</button>
+            </div>
+            <div id="computerChoice">
+                <h2>Computer's Choice</h2>
+                <p id="computerSelection">-</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
